@@ -864,7 +864,7 @@ nav ul li {
     width: 100%;
     background: #0223D0;
     border-radius: 20px;
-    padding: 25px 20px 0px 20px;
+    padding: 25px 35px 0px 30px;
 }
 
 .area_card_int_2 {
@@ -941,7 +941,7 @@ nav ul li {
 
 .btn_grupo_data_card_int h2 {
     font-weight: var(--font-weight-700);
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: var(--letter-spacing);
     color: #FFFFFF;
     margin: 0px;
@@ -966,7 +966,7 @@ nav ul li {
 
 .btn_grupo_participar_card_int h2 {
     font-weight: var(--font-weight-700);
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: var(--letter-spacing);
     color: #000000;
     margin: 0px;
