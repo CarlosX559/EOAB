@@ -17,10 +17,13 @@
 a {
     text-decoration: none;
     max-width: max-content;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
 }
 
 a:hover {
     text-decoration: none !important;
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
 body {
@@ -124,6 +127,10 @@ body {
     width: 100%;
 }
 
+.area_container_header a:hover {
+    transform: scale3d(1, 1, 1);
+}
+
 /*
 .logo img {
     filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .4));
@@ -145,6 +152,10 @@ nav ul {
     margin: 0px;
     padding: 0px;
     width: 100%;
+}
+
+ul a:hover {
+    transform: scale3d(1, 1, 1);
 }
 
 nav ul li a:hover {
@@ -245,6 +256,11 @@ nav ul li {
     max-width: 575px;
 }
 
+.border_container_1 {
+    max-width: 280px;
+    border: 2px solid #FFFFFF;
+    border-radius: 56px;
+}
 
 .info_container_1 p {
     font-weight: var(--font-weight-500);
@@ -972,8 +988,114 @@ nav ul li {
     margin: 0px;
 }
 
+/*Cursos*/
+
+.area_cursos_total {
+    background: #F5F5F5;
+    width: 100%;
+    padding: 60px 0px 120px 30px;
+}
+
+.container_cursos {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.container_cursos_int {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.slide-4 .item  {
+    display: flex;
+    justify-content: end;
+}
+
+.slide-4 .owl-dots {
+    display: flex;
+    align-items: center;
+    margin-top: 0px !important;
+    position: absolute !important;
+    bottom: -60px !important;
+}
+
+.slide-4 .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px !important;
+    position: absolute !important;
+    bottom: -64px !important;
+    width: 20%;
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: 1 !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    background-color: transparent !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #808080 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #D9D9D9 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+button:focus {
+    outline: none !important;
+}
 
 
+.card_cursos {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0px 8px 28px -15px rgba(0, 0, 0, 0.3);
+    height: 368px;
+}
+
+.card_cursos_int {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_cursos_int img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.area_texts_cards_cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 25px 30px 25px;
+}
+
+.title_card_cursos h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 22px;
+    color: #000000;
+    margin: 0px;
+}
+
+.sub_title_card_cursos p {
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0px;
+}
 
 
 @media(max-width: 1024px) {
