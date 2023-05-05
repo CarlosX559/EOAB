@@ -1176,6 +1176,132 @@ button:focus {
     margin: 0px;
 }
 
+/*Comentários*/
+
+.area_comentarios_total {
+    background: #F5F5F5;
+    width: 100%;
+    padding: 60px 0px 120px 30px;
+}
+
+.container_comentarios {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.container_comentarios_int {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    width: 100%;
+    gap: 35px;
+}
+
+.title_comentarios_total h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 50px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0px;
+}
+
+.slide-5 .item  {
+    display: flex;
+    justify-content: start;
+}
+
+.slide-5 .owl-dots {
+    display: flex;
+    align-items: center;
+    margin-top: 0px !important;
+    position: absolute !important;
+    bottom: -60px !important;
+}
+
+.slide-5 .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px !important;
+    position: absolute !important;
+    bottom: -64px !important;
+    width: 20%;
+}
+
+.owl-carousel .owl-stage-outer {
+    height: 280px;
+}
+
+.comentarios_card {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 22px -11px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 240px;
+    max-width: 350px;
+    padding: 25px;
+   
+}
+
+.icon_comentario {
+    position: absolute;
+    left: 0px;
+    bottom: -38px;
+}
+
+.comentarios_card_int {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area_perfil_comentario {
+    display: flex;
+    gap: 8px;
+}
+
+.area_perfil_comentario img {
+    max-width: max-content;
+    width: 100%;
+    object-fit: contain;
+}
+
+.area_text_comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.title_nome_comentario h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 18px;
+    color: #000000;
+    margin: 0px;
+}
+
+.perfil_comentario h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 18px;
+    color: #0B30E3;
+    margin: 0px;
+}
+
+.text_comentario p {
+    font-weight: var(--font-weight-500);
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 1024px) {
