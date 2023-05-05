@@ -1108,6 +1108,75 @@ button:focus {
     margin: 0px;
 }
 
+/*CEO*/
+#container_ceo {
+    background-image: url(../img/bg_orlandocosta.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.container_ceo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_ceo_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1040px;
+}
+
+.area_ceo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.area_ceo img {
+    max-width: max-content;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.area_text_ceo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 674px;
+}
+
+.info_ceo p {
+    font-weight: var(--font-weight-800);
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFCE0A;
+    margin: 0px 0px -20px 0px;
+}
+
+.title_ceo h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 50px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sub_title_ceo p {
+    font-weight: var(--font-weight-500);
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+
 
 @media(max-width: 1024px) {
 
