@@ -1419,7 +1419,7 @@ button:focus {
 .bg_videos_youtube {
     position: absolute;
     bottom: 0px;
-    background: linear-gradient(176.86deg, rgba(31, 31, 31, 0) 2.6%, #1F1F1F 82.59%);
+    background: linear-gradient(176.86deg, rgba(31, 31, 31, 0) 20%, #1F1F1F 80%);
     width: 100%;
     height: 64px;
 }
@@ -1495,6 +1495,116 @@ button:focus {
     color: #FFFFFF;
     margin: 0px;
 }
+
+/*Contato*/
+.container_contato {
+    display: flex;
+    width: 100%;
+    background: #F5F5F5;
+    padding: 60px 30px 60px 30px;
+}
+
+.container_contato_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.area_contato {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.img_contato img {
+    width: 100%;
+    max-width: max-content;
+}
+
+.area_text_contato {
+    display: flex;
+    width: 100%;
+    max-width: 630px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title_contato h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: var(--letter-spacing);
+    color: #000000;
+    margin: 0px;
+}
+
+.sub_title_contato p {
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0px;
+}
+
+.area_newslatter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.area_newslatter_int {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.area_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.area_input label {
+    font-weight: var(--font-weight-700);
+    font-size: 18px;
+    color: #000000;
+    margin: 0px;
+}
+
+.enviar {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: var(--font-weight-700);
+    background: #0B30E3;
+    border-radius: 10px;
+    transition: all ease 300ms;
+}
+
+.enviar:hover {
+    background: #2684FC;
+    box-shadow: 0px 10px 25px -6px #2684FC;
+}
+
+input {
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    color: #D9D9D9;
+}
+
+
 
 
 @media(max-width: 1024px) {
