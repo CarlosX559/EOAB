@@ -1721,6 +1721,15 @@ input::placeholder {
     margin: 0px;
 }
 
+
+.bg_azul {
+    transition: all ease 300ms;
+}
+.bg_azul:hover {
+    background: #2684FC;
+    box-shadow: 0px 10px 25px -6px #2684FC;
+}
+
 /*Footer*/
 footer {
     background: #111111;
@@ -1948,10 +1957,9 @@ footer {
 .btn_novo {
     display: flex;
     gap: 4px;
-    align-items: center;
     background: #0B30E3;
     border-radius: 4px;
-    padding: 3px 6px;
+    padding: 4px 6px;
 }
 
 .btn_novo h2 {
