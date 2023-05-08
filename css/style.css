@@ -1321,6 +1321,12 @@ button:focus {
     gap: 60px;
 }
 
+.area_materiais img {
+    margin-top: -60px;
+    max-width: max-content;
+    width: 100%;
+}
+
 .area_texts_materiais {
     display: flex;
     flex-direction: column;
@@ -2670,40 +2676,51 @@ footer {
     .area_header {
         display: none;
     }
+
     .area_info_oab .container .row {
         padding: 0px 20px;
     }
+
     .col-sm-3 {
         flex: 1 0 35% !important;
     }
+
     .info_oab {
         height: 150px;
     }
+
     .info_oab_int svg {
         max-width: 70px;
     }
+
     .info_oab_int {
         gap: 10px;
     }
+
     #container_1 {
         background-image: url(../img/bg_header_mobile.png);
         height: 600px;
     }
+
     .area_container_1 {
         justify-content: flex-start;
         gap: 10px;
         padding-top: 60px;
     }
+
     .info_container_1 p {
         font-size: 14px;
     }
+
     .title_container_1 h2 {
         font-size: 30px;
     }
+
     .sub_title_container_1 p {
         font-size: 18px;
         line-height: 20px;
     }
+
     .btn_container_1 h2 {
         font-size: 14px;
     }
@@ -2715,29 +2732,43 @@ footer {
     .title_fase_1 h2 {
         font-size: 28px;
     }
+
+    .novo_destaque_title h2 {
+        font-size: 22px;
+    }
+
     .container_cursos_int {
         gap: 20px;
     }
+
     .title_cursos_total h2 {
         font-size: 28px;
         padding: 0px 20px;
     }
+
     /*Fase 1*/
     .area_area_fase_1_total {
         padding: 20px 0px 20px 0px;
     }
+
     .area_btn_pos_eoab {
         margin-bottom: 0px;
+    }
+
+    .fase_1_destaque_title h2 {
+        font-size: 22px;
     }
 
     /*Card*/
     .title_card h2 {
         font-size: 22px;
     }
+
     .sub_title_card p {
         font-size: 16px;
         line-height: 20px;
     }
+
     .btn_grupo_card_int h2 {
         font-size: 16px;
     }
@@ -2746,43 +2777,55 @@ footer {
     .info_card_2 {
         max-width: 200px;
     }
+
     .area_card_2 {
         padding: 25px 70px 0px 25px
     }
+
     .title_card_2 h2 {
         font-size: 22px;
     }
+
     .sub_title_card_2 p {
         font-size: 16px;
     }
+
     .btn_grupo_data_card_int h2 {
         font-size: 16px;
     }
+
     .btn_grupo_participar_card_int h2 {
         font-size: 16px;
     }
+
     /*Slide 4*/
     .area_cursos_total {
         padding: 40px 0px 60px 0px;
     }
+
     .slide-4 .owl-nav {
         bottom: -30px !important;
     }
+
     .slide-4 .item {
         display: flex;
         justify-content: center;
     }
+
     /*Slide 5*/
     .title_comentarios_total h2 {
         font-size: 28px;
         padding: 0px 20px;
     }
+
     .area_comentarios_total {
         padding: 40px 0px 60px 0px;
     }
+
     .container_comentarios_int {
         gap: 20px;
     }
+
     .slide-5 .owl-nav {
         bottom: -30px !important;
     }
@@ -2791,23 +2834,33 @@ footer {
         display: flex;
         justify-content: center;
     }
-
+    .slide-4 .owl-nav {
+        width: 20%;
+    }
+    .slide-5 .owl-nav {
+        width: 20%;
+    }
     .area_text_ceo {
         gap: 10px;
     }
+
     .area_ceo {
         gap: 20px;
     }
+
     .info_ceo p {
         margin: 0px 0px -10px 0px;
         font-size: 18px;
     }
+
     .area_ceo img {
         max-width: 240px;
     }
+
     .title_ceo h2 {
         font-size: 28px;
     }
+
     .sub_title_ceo p {
         font-size: 16px;
         line-height: 20px;
@@ -2817,9 +2870,11 @@ footer {
     .container_faq {
         padding: 0px 0px 40px 0px;
     }
+
     .title_faq h2 {
         font-size: 28px;
     }
+
     .quest h2 {
         font-size: 20px;
     }
@@ -2828,28 +2883,34 @@ footer {
         font-size: 18px;
         line-height: 20px;
     }
+
     .area_img_faq img {
         max-width: 20px;
     }
 
-    /*Contato*/    
+    /*Contato*/
     .title_contato h2 {
         font-size: 28px;
         line-height: 32px;
     }
+
     .area_input label {
         font-size: 16px;
     }
+
     .container_youtube_int {
         padding: 60px 30px 0px 30px;
     }
+
     /*Redes sociais*/
     .area_text_redes {
         gap: 20px;
     }
+
     .title_redes h2 {
         font-size: 28px;
     }
+
     .title_instagram h2 {
         font-size: 22px;
     }
@@ -2857,6 +2918,7 @@ footer {
     .sub_title_instagram p {
         font-size: 16px;
     }
+
     .btn_seguir_int h2 {
         font-size: 16px;
     }
@@ -2869,4 +2931,32 @@ footer {
         padding: 40px 0px 40px 0px;
     }
 
+}
+
+@media(max-width: 375px) {
+    .menu_mobile_open div {
+        width: 35px;
+    }
+
+    .area_container_header {
+        gap: 5px;
+    }
+
+    .btn_grupo_card_int h2 {
+        font-size: 14px;
+    }
+
+    .btn_grupo_data_card_int h2 {
+        font-size: 14px;
+    }
+
+    .btn_grupo_participar_card_int h2 {
+        font-size: 14px;
+    }
+    .info_card_2 {
+        max-width: 180px;
+    }
+    .area_card_2 {
+        padding: 25px 48px 0px 25px;
+    }
 }
