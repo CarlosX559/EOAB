@@ -2961,7 +2961,7 @@ footer {
 
 }
 
-@media(max-width: 375px) {
+@media(max-width: 400px) {
     .menu_mobile_open div {
         width: 35px;
     }
@@ -2978,7 +2978,7 @@ footer {
         font-size: 14px;
     }
 
-    .btn_grupo_participar_card_int h2 {
+    .btn_seguir_int h2 {
         font-size: 14px;
     }
 
