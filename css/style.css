@@ -989,7 +989,7 @@ nav ul li {
 .area_cursos_total {
     background: #F5F5F5;
     width: 100%;
-    padding: 60px 0px 120px 30px;
+    padding: 60px 0px 120px 0px;
 }
 
 .container_cursos {
@@ -1068,17 +1068,19 @@ button:focus {
 }
 
 .card_cursos {
+    display: flex;
+    flex: 0 0 340px;
+    margin-right: 35px;
+    margin-left: 35px;
     background: #FFFFFF;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 350px;
-    box-shadow: 0px 8px 28px -15px rgba(0, 0, 0, 0.3);
-    height: 368px;
 }
 
 .card_cursos_int {
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 8px 28px -15px rgba(0, 0, 0, 0.3);
+    height: 360px;
 }
 
 .card_cursos_int img {
@@ -1181,7 +1183,7 @@ button:focus {
 .area_comentarios_total {
     background: #F5F5F5;
     width: 100%;
-    padding: 60px 0px 120px 30px;
+    padding: 60px 0px 120px 0px;
 }
 
 .container_comentarios {
@@ -1208,7 +1210,7 @@ button:focus {
 
 .slide-5 .item {
     display: flex;
-    justify-content: start;
+    justify-content: end;
 }
 
 .slide-5 .owl-dots {
@@ -1234,19 +1236,16 @@ button:focus {
 }
 
 .comentarios_card {
-    width: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 12px 22px -11px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    height: 240px;
-    max-width: 350px;
-    padding: 25px;
+    display: flex;
+    flex: 0 0 340px;
+    margin-right: 35px;
+    margin-left: 35px;
 
 }
 
 .icon_comentario {
     position: absolute;
-    left: 0px;
+    left: -12px;
     bottom: -38px;
 }
 
@@ -1254,6 +1253,12 @@ button:focus {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 22px -11px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 240px;
+    max-width: 350px;
+    padding: 25px;
 }
 
 .area_perfil_comentario {
@@ -2840,12 +2845,15 @@ footer {
         display: flex;
         justify-content: center;
     }
+
     .slide-4 .owl-nav {
         width: 20%;
     }
+
     .slide-5 .owl-nav {
         width: 20%;
     }
+
     .area_text_ceo {
         gap: 10px;
     }
@@ -2893,6 +2901,7 @@ footer {
     .area_img_faq img {
         max-width: 15px;
     }
+
     .area_img_faq {
         width: 35px;
         height: 35px;
@@ -2942,6 +2951,7 @@ footer {
     }
 
 }
+
 @media(max-width: 425px) {
     .icon_comentario {
         position: absolute;
@@ -2971,12 +2981,15 @@ footer {
     .btn_grupo_participar_card_int h2 {
         font-size: 14px;
     }
+
     .info_card_2 {
         max-width: 180px;
     }
+
     .area_card_2 {
         padding: 25px 48px 0px 25px;
     }
+
     .icon_comentario {
         position: absolute;
         left: 18px;
