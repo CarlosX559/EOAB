@@ -31,6 +31,64 @@ body {
     padding: 0px;
 }
 
+
+[data-animation] {
+    opacity: 0;
+    transition: all 400ms ease-in !important;
+}
+
+[data-animation-top] {
+    -webkit-transform: translateY(20px) scaleY(1.2) !important;
+    -ms-transform: translateY(20px) scaleY(1.2) !important;
+    transform: translateY(20px) scaleY(1.2) !important;
+    opacity: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-delay-1] {
+    transition-delay: 200ms !important;
+}
+
+[data-delay-2] {
+    transition-delay: 400ms !important;
+}
+
+[data-delay-3] {
+    transition-delay: 600ms !important;
+}
+
+[data-delay-4] {
+    transition-delay: 800ms !important;
+}
+
+[data-delay-5] {
+    transition-delay: 1000ms !important;
+}
+
+[data-animation="down"] {
+    transform: translate3d(0, 20px, 0);
+}
+
+[data-animation="left"] {
+    transform: translate3d(-20px, 0, 0);
+}
+
+[data-animation="right"] {
+    transform: translate3d(20px, 0, 0);
+}
+
+[data-animation].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate(0) scaleY(1) !important;
+    -ms-transform: translate(0) scaleY(1) !important;
+    transform: translate(0) scaleY(1) !important;
+}
+
 .area_header {
     background: linear-gradient(88.31deg, #1F1F1F 0%, #000000 66.77%);
     width: 100%;
@@ -161,7 +219,32 @@ nav ul li a:hover {
     color: #fff;
 }
 
+nav ul li:hover > .border_header {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn_blog:hover > .border_header {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.border_header {
+    transition: all ease 300ms;
+    width: 0%;
+    height: 3px;
+}
+
 nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
     text-align: center;
     list-style: none;
     width: 100%;
@@ -171,7 +254,6 @@ nav ul li {
 nav ul li a {
     font-weight: var(--font-weight-800);
     font-size: 18px;
-    line-height: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -179,7 +261,6 @@ nav ul li a {
 nav ul li {
     font-weight: var(--font-weight-800);
     font-size: 18px;
-    line-height: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -194,6 +275,13 @@ nav ul li {
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
+}
+
+.btn_header_1:hover,
+.btn_header_2:hover {
+    background: #2684FC;
+    box-shadow: 0px 10px 25px -6px #2684FC;
 }
 
 .btn_header_3 {
@@ -204,9 +292,23 @@ nav ul li {
     background: #FED32D;
     border-radius: 10px;
     padding: 12px 30px 12px 30px;
+    transition: all ease 300ms;
+}
+
+.btn_header_3:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
 }
 
 .btn_blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    transition: all ease 300ms;
+}
+.btn_blog_int {
     display: flex;
     gap: 8px;
 }
@@ -297,6 +399,7 @@ nav ul li {
     background: #FED32D;
     border-radius: 10px;
     padding: 12px 30px 12px 30px;
+    transition: all ease 300ms;
 }
 
 .btn_container_1 h2 {
@@ -305,6 +408,11 @@ nav ul li {
     line-height: 22px;
     color: #000000;
     margin: 0px;
+}
+
+.btn_container_1:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
 }
 
 .area_info_oab {
@@ -319,6 +427,12 @@ nav ul li {
     border-radius: 30px;
     width: 100%;
     height: 185px;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.info_oab:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
 .info_oab_int {
