@@ -2798,6 +2798,12 @@ footer {
         font-size: 16px;
     }
 
+    .icon_comentario {
+        position: absolute;
+        left: 68px;
+        bottom: -38px;
+    }
+
     /*Slide 4*/
     .area_cursos_total {
         padding: 40px 0px 60px 0px;
@@ -2885,7 +2891,11 @@ footer {
     }
 
     .area_img_faq img {
-        max-width: 20px;
+        max-width: 15px;
+    }
+    .area_img_faq {
+        width: 35px;
+        height: 35px;
     }
 
     /*Contato*/
@@ -2932,6 +2942,14 @@ footer {
     }
 
 }
+@media(max-width: 425px) {
+    .icon_comentario {
+        position: absolute;
+        left: 40px;
+        bottom: -38px;
+    }
+
+}
 
 @media(max-width: 375px) {
     .menu_mobile_open div {
@@ -2958,5 +2976,10 @@ footer {
     }
     .area_card_2 {
         padding: 25px 48px 0px 25px;
+    }
+    .icon_comentario {
+        position: absolute;
+        left: 18px;
+        bottom: -38px;
     }
 }
