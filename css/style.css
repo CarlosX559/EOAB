@@ -1245,7 +1245,6 @@ button:focus {
 
 .icon_comentario {
     position: absolute;
-    left: -12px;
     bottom: -38px;
 }
 
@@ -2805,7 +2804,6 @@ footer {
 
     .icon_comentario {
         position: absolute;
-        left: 68px;
         bottom: -38px;
     }
 
@@ -2955,7 +2953,6 @@ footer {
 @media(max-width: 425px) {
     .icon_comentario {
         position: absolute;
-        left: 40px;
         bottom: -38px;
     }
 
@@ -2992,7 +2989,6 @@ footer {
 
     .icon_comentario {
         position: absolute;
-        left: 18px;
         bottom: -38px;
     }
 }
