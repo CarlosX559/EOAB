@@ -1823,7 +1823,7 @@ button:focus {
     font-weight: var(--font-weight-700);
     background: #0B30E3;
     border-radius: 10px;
-    transition: all ease 300ms;
+    transition: all ease 300ms !important;
 }
 
 .enviar:hover {
