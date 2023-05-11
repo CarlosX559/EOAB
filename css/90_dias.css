@@ -883,6 +883,141 @@ button:focus {
     color: #FFFFFF;
     margin: 0px;
 }
+/*Container exame oab*/
+#container_exame_oab {
+    background-image: url(../img_90_dias/bg_exame_oab.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+}
+
+.container_exame_oab {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 80px 0px 60px 0px;
+}
+
+.container_exame_oab_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.area_exame_oab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    gap: 30px;
+    padding: 50px 0px 50px 0px;
+}
+
+.title_exame_oab h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.area_edital_exame_oab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edital_exame_oab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area_texts_exame_oab {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.title_text_exame_oab h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sub_title_text_exame_oab p {
+    font-weight: var(--font-weight-500);
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.info_exame_oab p {
+    font-weight: var(--font-weight-400);
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing);
+    color: #FED32D;
+    margin: 20px 0px 0px 0px;
+}
+             
+.area_texts_disciplinas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.title_disciplinas h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sub_title_disciplinas p {
+    font-weight: var(--font-weight-500);
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.area_novidades {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.title_novidades h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sub_title_novidades p {
+    font-weight: var(--font-weight-800);
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    color: #FED32D;
+    margin: 0px;
+}
 
 /*Comentários*/
 
