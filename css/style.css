@@ -2573,8 +2573,17 @@ footer {
     .area_cursos_footer {
         text-align: center;
         align-items: center;
+        width: 100%;
     }
-
+    .title_outros_cursos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        padding: 10px 0px;
+        background: #323232;
+        border-radius: 10px;
+    }
 }
 
 @media(max-width: 768px) {
