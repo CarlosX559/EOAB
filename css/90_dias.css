@@ -430,7 +430,6 @@ button:focus {
     margin: 0px;
 }
 
-
 .btn_container_1 {
     display: flex;
     align-items: center;
@@ -694,7 +693,6 @@ button:focus {
     background-size: cover;
     width: 100%;
     height: 450px;
-    padding: 60px 0px 60px 0px;
 }
 
 .container_oferta {
@@ -763,7 +761,8 @@ button:focus {
     border-radius: 20px;
     width: 100%;
     max-width: 460px;
-     padding: 40px 0px;
+    margin-top: -40px;
+    padding: 70px 0px;
 }
 
 .area_oferta_especial_int {
@@ -781,6 +780,105 @@ button:focus {
 .title_oferta_especial h2 {
     font-weight: var(--font-weight-800);
     font-size: 40px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.preco_especial p {
+    font-weight: var(--font-weight-500);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.preco_especial_total {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px;
+    max-width: 260px;
+    margin-top: 40px;
+}
+
+.real h4 {
+    font-weight: var(--font-weight-700);
+    font-size: 40px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.preco h2 {
+    font-weight: var(--font-weight-800);
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.preco h4 {
+    font-weight: var(--font-weight-800);
+    font-size: 40px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.parcelar p {
+    font-weight: var(--font-weight-400);
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.area_pagamento_footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0px 20px 0px;
+}
+
+.btn_preco_especial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #FED32D;
+    border-radius: 10px;
+    padding: 12px 30px 12px 30px;
+    transition: all ease 300ms;
+}
+
+.btn_preco_especial h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0px;
+}
+
+.btn_preco_especial:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
+}
+
+.info_limitado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.info_limitado p {
+    font-weight: var(--font-weight-700);
+    font-size: 18px;
+    text-align: center;
     letter-spacing: var(--letter-spacing);
     color: #FFFFFF;
     margin: 0px;
