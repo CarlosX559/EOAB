@@ -829,6 +829,98 @@
     </section>
 
 
+    <div class="area_time_total">
+        <div class="container_time">
+            <div class="container_time_int">
+                <div class="title_time">
+                    <h2>
+                        Nosso time
+                    </h2>
+                </div>
+                <div class="sub_title_time">
+                    <p>
+                        Professores especializados em aprovar para OAB
+                    </p>
+                </div>
+                <div class="area_time">
+
+                    <div class="slide-2 owl-carousel owl-theme">
+
+                        <div class="item">
+                            <div class="card_time">
+                                <div class="card_time_int">
+                                    <div class="img_card_time">
+                                        <img src="img_90_dias/time_1.png" alt="">
+                                    </div>
+
+                                    <div class="title_card_time">
+                                        <h2>
+                                            Ricardo Monteiro
+                                        </h2>
+                                    </div>
+                                    <div class="sub_title_card_time">
+                                        <p>
+                                            Estatuto e Ética
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card_time">
+                                <div class="card_time_int">
+                                    <div class="img_card_time">
+                                        <img src="img_90_dias/time_2.png" alt="">
+                                    </div>
+
+                                    <div class="title_card_time">
+                                        <h2>
+                                            Thiago Antunes
+                                        </h2>
+                                    </div>
+                                    <div class="sub_title_card_time">
+                                        <p>
+                                            Direito Processual Civil
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card_time">
+                                <div class="card_time_int">
+                                    <div class="img_card_time">
+                                        <img src="img_90_dias/time_2.png" alt="">
+                                    </div>
+
+                                    <div class="title_card_time">
+                                        <h2>
+                                            Eduardo Costa
+                                        </h2>
+                                    </div>
+                                    <div class="sub_title_card_time">
+                                        <p>
+                                            Direito Processual Civil e
+                                            Direito do Consumidor
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section id="container_exame_oab">
         <div class="container_exame_oab">
             <div class="container_exame_oab_int">
@@ -956,7 +1048,7 @@
                                 </p>
                             </div>
                         </div>
-                     
+
                     </div>
 
                 </div>
@@ -976,7 +1068,7 @@
                     </h2>
                 </div>
 
-                <div class="slide-5 owl-carousel owl-theme">
+                <div class="slide-1 owl-carousel owl-theme">
 
                     <div class="item">
                         <div class="comentarios_card">
@@ -1427,11 +1519,12 @@
                             <div class="area_newslatter_int">
                                 <div class="area_input" data-animation="right" data-delay-3>
                                     <label for="nome">Seu primeiro nome:</label>
-                                    <input type="text" name="nome" placeholder="Maria" required>
+                                    <input type="text" id="nome" name="nome" placeholder="Maria" required>
                                 </div>
                                 <div class="area_input" data-animation="right" data-delay-4>
                                     <label for="email">Seu e-mail:</label>
-                                    <input type="text" name="email" placeholder="exemplo@exemplo.com" required>
+                                    <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com"
+                                        required>
                                 </div>
 
                             </div>
@@ -1727,81 +1820,6 @@
             $(".slide-1").owlCarousel({
 
                 items: 6,
-                loop: false,
-                nav: false,
-                dots: false,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                responsive: {
-                    375: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1024: {
-                        items: 2
-                    },
-                    1440: {
-                        items: 2
-                    }
-                }
-
-            });
-
-            $(".slide-2").owlCarousel({
-
-                items: 6,
-                loop: false,
-                nav: false,
-                autoplay: false,
-                dots: false,
-                autoplayTimeout: 6000,
-                responsive: {
-                    375: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1024: {
-                        items: 3
-                    },
-                    1440: {
-                        items: 4
-                    }
-                }
-
-            });
-
-            $(".slide-3").owlCarousel({
-
-                items: 6,
-                loop: false,
-                nav: false,
-                dots: false,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                responsive: {
-                    375: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1024: {
-                        items: 2
-                    },
-                    1440: {
-                        items: 2
-                    }
-                }
-
-            });
-
-            $(".slide-4").owlCarousel({
-
-                items: 6,
                 loop: true,
                 nav: true,
                 navText: [
@@ -1809,8 +1827,8 @@
                     next
                 ],
                 margin: 0,
-                autoplay: true,
-                autoplayTimeout: 10000,
+                autoplay: false,
+                autoplayTimeout: 8000,
                 responsive: {
                     375: {
                         items: 1,
@@ -1831,16 +1849,17 @@
 
             });
 
-            $(".slide-5").owlCarousel({
+            $(".slide-2").owlCarousel({
 
                 items: 6,
-                loop: true,
-                nav: true,
+                loop: false,
+                nav: false,
                 navText: [
                     prev,
                     next
                 ],
-                margin: 0,
+                dots: false,
+                margin: 30,
                 autoplay: false,
                 autoplayTimeout: 8000,
                 responsive: {
