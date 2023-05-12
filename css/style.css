@@ -219,14 +219,14 @@ nav ul li a:hover {
     color: #fff;
 }
 
-nav ul li:hover > .border_header {
+nav ul li:hover>.border_header {
     width: 100%;
     height: 3px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
 
-.btn_blog:hover > .border_header {
+.btn_blog:hover>.border_header {
     width: 100%;
     height: 3px;
     background-color: #FFFFFF;
@@ -308,6 +308,7 @@ nav ul li {
     gap: 2px;
     transition: all ease 300ms;
 }
+
 .btn_blog_int {
     display: flex;
     gap: 8px;
@@ -787,6 +788,7 @@ nav ul li {
     justify-content: center;
     flex-wrap: wrap;
     align-items: baseline;
+    max-width: 260px;
     gap: 2px;
 }
 
@@ -2449,6 +2451,7 @@ footer {
         flex: 0 0 325px !important;
     }
 
+
     .area_contato {
         flex-direction: column;
         align-items: center;
@@ -2489,6 +2492,7 @@ footer {
         line-height: 20px;
     }
 
+    /*Card cursos*/
     .area_cards_total {
         padding: 40px 0px 40px 0px;
     }
@@ -2505,7 +2509,28 @@ footer {
     }
 
     .area_cursos_total {
-        padding: 40px 0px 120px 30px;
+        padding: 0px 0px 80px 30px;
+    }
+
+    .slide-4 .owl-nav {
+        bottom: -30px !important;
+    }
+
+    .card_cursos {
+        flex: 0 0 310px;
+    }
+
+    .comentarios_card {
+        flex: 0 0 310px;
+    }
+
+    /*Comentarios*/
+    .area_comentarios_total {
+        padding: 60px 0px 80px 0px;
+    }
+
+    .slide-5 .owl-nav {
+        bottom: -30px !important;
     }
 
     .area_ceo {
@@ -2514,8 +2539,35 @@ footer {
         flex-direction: column-reverse;
     }
 
+    /*Materiais*/
+    .title_materiais h2 {
+        font-size: 40px;
+    }
+
+    .sub_title_materiais p {
+        font-size: 18px;
+    }
+
+    .btn_materiais_int h2 {
+        font-size: 16px;
+    }
+
     .area_ceo img {
         margin-top: 0px;
+    }
+
+    /*Faq*/
+    .title_faq h2 {
+        font-size: 40px;
+    }
+
+    .quest h2 {
+        font-size: 22px;
+    }
+
+    .aswer h2 {
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .area_text_ceo {
@@ -2575,6 +2627,7 @@ footer {
         align-items: center;
         width: 100%;
     }
+
     .title_outros_cursos {
         display: flex;
         justify-content: center;
@@ -2823,6 +2876,7 @@ footer {
     .info_oab_int {
         gap: 10px;
     }
+  
 
     #container_1 {
         background-image: url(../img/bg_header_mobile.png);

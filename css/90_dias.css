@@ -69,6 +69,14 @@ body {
     transition-delay: 1000ms !important;
 }
 
+[data-delay-6] {
+    transition-delay: 1100ms !important;
+}
+
+[data-delay-7] {
+    transition-delay: 1200ms !important;
+}
+
 [data-animation="down"] {
     transform: translate3d(0, 20px, 0);
 }
@@ -436,7 +444,7 @@ button:focus {
     justify-content: center;
     gap: 8px;
     background: #FED32D;
-    border-radius: 10px;
+    border-radius: 40px;
     padding: 12px 30px 12px 30px;
     transition: all ease 300ms;
 }
@@ -452,6 +460,28 @@ button:focus {
 .btn_container_1:hover {
     background: #FED32D;
     box-shadow: 0px 10px 25px -6px #FED32D;
+}
+
+.area_total_preco_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.preco_especial_header p {
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.preco_especial_total_header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    max-width: 260px;
 }
 
 /*Beneficios*/
@@ -619,6 +649,7 @@ button:focus {
     color: #0B30E3;
     margin: 0px;
 }
+
 /*Container base*/
 .container_base {
     display: flex;
@@ -787,11 +818,11 @@ button:focus {
 
 .preco_especial p {
     font-weight: var(--font-weight-500);
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     letter-spacing: var(--letter-spacing);
     color: #FFFFFF;
-    margin: 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 .preco_especial_total {
@@ -801,7 +832,6 @@ button:focus {
     align-items: baseline;
     gap: 2px;
     max-width: 260px;
-    margin-top: 40px;
 }
 
 .real h4 {
@@ -858,7 +888,6 @@ button:focus {
 .btn_preco_especial h2 {
     font-weight: var(--font-weight-700);
     font-size: 18px;
-    line-height: 22px;
     color: #000000;
     margin: 0px;
 }
@@ -1081,7 +1110,7 @@ button:focus {
     color: #FED32D;
     margin: 20px 0px 0px 0px;
 }
-             
+
 .area_texts_disciplinas {
     display: flex;
     flex-direction: column;
@@ -2058,8 +2087,6 @@ footer {
     margin: 0px;
 }
 
-
-
 @media(max-width: 1024px) {
 
     .title_header_1 h2 {
@@ -2074,7 +2101,7 @@ footer {
         font-size: 14px;
     }
 
-    nav ul {
+    .desktop {
         display: none;
     }
 
@@ -2204,10 +2231,17 @@ footer {
         font-size: 22px;
     }
 
+    .container_beneficios_int .col-sm-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
     .col-sm-3 {
         -ms-flex: 0 0 35% !important;
         flex: 0 0 35% !important;
-        max-width: 50% !important;
+        max-width: 100% !important;
         padding: 0px !important;
     }
 
@@ -2238,6 +2272,284 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    /*Beneficios*/
+    .area_texts_total {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .title_beneficios_total h2 {
+        font-size: 40px;
+    }
+
+    .beneficios_destaque h2 {
+        font-size: 26px;
+    }
+
+    .title_beneficios h2 {
+        font-size: 20px;
+    }
+
+    /*Exclusivo*/
+    .container_exclusivo {
+        background: url(.png), linear-gradient(270deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 50%);
+    }
+
+    .container_exclusivo_int {
+        padding: 40px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title_exclusivo h2 {
+        font-size: 50px;
+    }
+
+    .sub_title_exclusivo p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .sub_title_exclusivo p b {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .title_bonus h2 {
+        font-size: 20px;
+    }
+
+    .area_exclusivo {
+        text-align: center;
+        max-width: 500px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /*Base*/
+    .container_base {
+        padding: 60px 0px 100px 0px;
+    }
+
+    .container_base_int {
+        gap: 20px;
+    }
+
+    .title_base h2 {
+        font-size: 40px;
+    }
+
+    .area_base {
+        gap: 10px;
+    }
+
+    /*Oferta*/
+    #container_oferta {
+        height: 100%;
+        padding: 40px 0px;
+    }
+
+    .area_oferta {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .area_texts_oferta {
+        gap: 20px;
+    }
+
+    .area_oferta_especial {
+        margin-top: 0px;
+        padding: 40px 0px;
+    }
+
+    .title_oferta_especial h2 {
+        font-size: 30px;
+    }
+
+    .preco h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .parcelar p {
+        font-size: 18px;
+    }
+
+    .btn_preco_especial h2 {
+        font-size: 16px;
+    }
+
+    .info_limitado p {
+        font-size: 16px;
+    }
+
+    .preco_oferta h2 {
+        font-size: 30px;
+    }
+
+    .title_oferta h2 {
+        font-size: 40px;
+    }
+
+    .area_info_oferta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        max-width: 500px;
+    }
+
+    .area_texts_oferta {
+        align-items: center;
+    }
+
+    /*card time*/
+    .container_time_int {
+        gap: 20px;
+    }
+
+    .area_time_total {
+        padding: 60px 0px 40px 0px;
+    }
+
+    .title_time h2 {
+        font-size: 40px;
+    }
+
+    .sub_title_time p {
+        font-size: 22px;
+    }
+
+    .card_time {
+        padding: 0px 20px;
+        height: 450px;
+    }
+
+    .card_time_int {
+        gap: 20px;
+    }
+
+    .title_card_time h2 {
+        font-size: 26px;
+    }
+
+    .sub_title_card_time p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /*Exame*/
+    #container_exame_oab {
+        height: 100%;
+    }
+
+    .container_exame_oab {
+        margin: 40px 0px 40px 0px;
+    }
+
+    .area_exame_oab {
+        padding: 40px 20px 40px 20px;
+    }
+
+    .title_exame_oab h2 {
+        font-size: 40px;
+    }
+
+    .area_edital_exame_oab {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .title_text_exame_oab h2 {
+        font-size: 18px;
+    }
+
+    .sub_title_text_exame_oab p {
+        font-size: 18px;
+    }
+
+    .info_exame_oab p {
+        font-size: 18px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .area_texts_disciplinas {
+        margin-top: 0px;
+        gap: 20px;
+    }
+
+    .title_disciplinas h2 {
+        font-size: 26px;
+    }
+
+    .sub_title_disciplinas p {
+        font-size: 18px;
+    }
+
+    .title_novidades h2 {
+        font-size: 26px;
+    }
+
+    .sub_title_novidades p {
+        font-size: 26px;
+    }
+
+    /*Materiais*/
+    .title_materiais h2 {
+        font-size: 40px;
+    }
+
+    .sub_title_materiais p {
+        font-size: 18px;
+    }
+
+    .btn_materiais_int h2 {
+        font-size: 16px;
+    }
+
+    /*Faq*/
+    .title_faq h2 {
+        font-size: 40px;
+    }
+
+    /*Comentarios*/
+    .title_comentarios_total h2 {
+        font-size: 40px;
+    }
+
+    .comentarios_card {
+        display: flex;
+        flex: 0 0 325px;
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+
+    .area_comentarios_total {
+        padding: 60px 0px 80px 0px;
+    }
+
+    .slide-1 .owl-nav {
+        bottom: -40px !important;
+    }
+
+    /*Faq*/
+    .title_faq h2 {
+        font-size: 40px;
+    }
+
+    .quest h2 {
+        font-size: 22px;
+    }
+
+    .aswer h2 {
+        font-size: 20px;
+        line-height: 24px;
     }
 
     /*Redes sociais*/
@@ -2363,4 +2675,434 @@ footer {
         border-radius: 10px;
     }
 
+}
+
+@media(max-width: 768px) {
+    .area_header {
+        display: none;
+    }
+
+    /*Container 1*/
+    .area_container_1 svg {
+        width: 300px;
+    }
+
+    .title_header_2 h2 {
+        font-size: 0.8em;
+        line-height: 18px;
+    }
+
+    .sub_title_header_2 p {
+        font-size: 12px;
+    }
+
+    .title_header_1 h2 {
+        font-size: 0.8em;
+    }
+
+    .col-sm-2 {
+        max-width: 100% !important;
+    }
+
+
+    /*Base*/
+    .container_base {
+        padding: 60px 0px 60px 0px;
+    }
+
+    /*Materiais*/
+    .area_materiais {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .area_texts_materiais {
+        align-items: center;
+        gap: 4px;
+    }
+
+    .sub_title_materiais p {
+        margin: 0px 0px 10px 0px;
+        font-size: 16px;
+    }
+
+    .btn_materiais_int h2 {
+        font-size: 16px;
+    }
+
+    .title_materiais h2 {
+        font-size: 26px;
+    }
+
+    .container_youtube {
+        padding: 0px 20px;
+    }
+
+    .container_youtube_int {
+        padding: 60px 60px 0px 60px;
+    }
+
+    .area_youtube {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container_youtube {
+        padding: 0px 20px;
+    }
+
+    .area_videos_youtube {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .area_auloes {
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .area_videos_youtube_int img {
+        max-width: 140px;
+    }
+
+    .title_youtube h2 {
+        font-size: 14px;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .sub_title_youtube p {
+        font-size: 13px;
+    }
+
+    .area_newslatter_int {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px) {
+
+    #container_1 {
+        background-image: url(../img_90_dias/bg_90_dias_mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 640px;
+    }
+
+    .area_container_1 {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .preco_especial_header p {
+        font-size: 16px;
+    }
+
+    .preco h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .parcelar p {
+        font-size: 16px;
+    }
+
+    .btn_container_1 h2 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .area_container_1 svg {
+        width: 260px;
+    }
+
+    .title_beneficios_total h2 {
+        font-size: 26px;
+    }
+
+    .beneficios_destaque h2 {
+        font-size: 22px;
+    }
+
+    /*Beneficios*/
+    .title_beneficios h2 {
+        font-size: 14px;
+    }
+
+    .icon_beneficions {
+        width: 38px;
+        height: 38px;
+    }
+
+    .area_beneficios {
+        height: 110px;
+    }
+
+    .area_beneficios_int {
+        padding: 20px;
+    }
+
+    .icon_beneficions svg {
+        width: 22px;
+
+    }
+
+    /*Exclusivo*/
+    #container_exclusivo {
+        background: #F5F5F5;
+    }
+
+    .area_bg_exclusivo_mobile {
+        display: none;
+    }
+
+    .title_exclusivo h2 {
+        font-size: 26px;
+    }
+
+    .sub_title_exclusivo p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .sub_title_exclusivo p b {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .title_bonus h2 {
+        font-size: 18px;
+    }
+
+    .area_bg_exclusivo_mobile {
+        display: flex;
+        background-image: url(../img_90_dias/bg_exclusivo_mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 580px;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .bg_exclusivo_mobile {
+        position: absolute;
+        bottom: 0px;
+        background: linear-gradient(0deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 124.27%);
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /*Base*/
+    .container_base {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .title_base h2 {
+        font-size: 26px;
+    }
+
+    .base_int {
+        gap: 10px;
+    }
+
+    .title_base_area h2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .sub_title_base_area p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /*Oferta*/
+    .title_oferta h2 {
+        font-size: 26px;
+    }
+
+    .title_info_oferta h2 {
+        font-size: 16px;
+    }
+
+    .preco_oferta h2 {
+        font-size: 20px;
+    }
+
+    .title_oferta_especial h2 {
+        font-size: 26px;
+    }
+
+    .preco_especial p {
+        font-size: 16px;
+        text-align: center;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .area_pagamento_footer {
+        margin: 20px 0px 20px 0px;
+    }
+
+    /*card time*/
+    .area_time_total {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .container_time_int {
+        gap: 10px;
+    }
+
+    .title_time h2 {
+        font-size: 26px;
+    }
+
+    .sub_title_time p {
+        font-size: 18px;
+    }
+
+    .card_time {
+        max-width: 375px;
+    }
+
+    /*Exame*/
+    .title_exame_oab h2 {
+        font-size: 26px;
+    }
+
+    .edital_exame_oab {
+        background: rgba(2, 35, 208, 0.6);
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .area_edital_exame_oab {
+        gap: 10px;
+    }
+
+    .title_text_exame_oab h2 {
+        font-size: 14px;
+    }
+
+    .sub_title_text_exame_oab p {
+        font-size: 14px;
+    }
+
+    .edital_exame_oab svg {
+        width: 22px;
+    }
+
+    .area_texts_disciplinas {
+        gap: 10px;
+    }
+
+    .title_disciplinas h2 {
+        font-size: 20px;
+    }
+
+    .sub_title_disciplinas p {
+        font-size: 16px;
+    }
+
+    .title_novidades h2 {
+        font-size: 22px;
+    }
+
+    .sub_title_novidades p {
+        font-size: 20px;
+    }
+
+    /*Comentarios*/
+    .container_comentarios_int {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title_comentarios_total h2 {
+        font-size: 26px;
+    }
+
+    .area_comentarios_total {
+        padding: 40px 0px 60px 0px;
+    }
+
+    .slide-1 .item {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Faq*/
+    .title_faq h2 {
+        font-size: 28px;
+    }
+
+    .quest h2 {
+        font-size: 20px;
+    }
+
+    .aswer h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .area_img_faq img {
+        max-width: 15px;
+    }
+
+    .area_img_faq {
+        width: 35px;
+        height: 35px;
+    }
+
+    /*Contato*/
+    .title_contato h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .area_input label {
+        font-size: 16px;
+    }
+
+    .container_youtube_int {
+        padding: 60px 30px 0px 30px;
+    }
+
+    /*Redes sociais*/
+    .area_text_redes {
+        gap: 20px;
+    }
+
+    .title_redes h2 {
+        font-size: 28px;
+    }
+
+    .title_instagram h2 {
+        font-size: 22px;
+    }
+
+    .sub_title_instagram p {
+        font-size: 16px;
+    }
+
+    .btn_seguir_int h2 {
+        font-size: 16px;
+    }
+
+    .img_redes img {
+        max-width: 240px;
+    }
+
+    footer {
+        padding: 40px 0px 40px 0px;
+    }
 }

@@ -77,7 +77,7 @@
                                 </a>
 
                                 <nav>
-                                    <ul>
+                                    <ul class="desktop">
                                         <a href="#">
                                             <div class="btn_header_1">
                                                 <img src="img/icon_whatsapp.svg" alt="">
@@ -159,12 +159,22 @@
                                                     <li>Compre aqui</li>
                                                 </div>
                                             </a>
-                                            <li><a href="#">Questões OAB</a></li>
-                                            <li><a href="#">Cursos</a></li>
+                                            <li>
+                                                <a href="#">Questões OAB</a>
+                                                <div class="border_header"></div>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cursos</a>
+                                                <div class="border_header"></div>
+                                            </li>
                                             <a href="#">
                                                 <div class="btn_blog">
-                                                    <img src="img/world.svg" alt="">
-                                                    <li>Blog</li>
+                                                    <div class="btn_blog_int">
+                                                        <img src="img/world.svg" alt="">
+                                                        <li>Blog</li>
+                                                    </div>
+    
+                                                    <div class="border_header"></div>
                                                 </div>
                                             </a>
                                             <a href="#">
@@ -216,21 +226,40 @@
                                 d="M234.154 13.31C232.05 8.98685 229.144 5.67786 225.423 3.40523C221.709 1.13261 217.428 0 212.6 0C207.772 0 203.49 1.13261 199.776 3.40523C196.062 5.67786 193.156 8.97945 191.045 13.31C188.94 17.6406 187.884 22.8743 187.884 28.9963C187.884 35.1183 188.94 40.3594 191.045 44.6826C193.149 49.0131 196.055 52.3147 199.776 54.5874C203.49 56.86 207.764 58 212.6 58C217.435 58 221.709 56.86 225.423 54.5874C229.137 52.3147 232.043 49.0131 234.154 44.6826C236.259 40.3594 237.315 35.1257 237.315 28.9963C237.315 22.8669 236.259 17.6406 234.154 13.31ZM218.017 37.3983C217.471 39.4563 216.736 40.9146 215.796 41.7585C214.857 42.6024 213.794 43.0244 212.6 43.0244C211.405 43.0244 210.342 42.6024 209.403 41.7585C208.463 40.9146 207.728 39.4563 207.182 37.3983C206.636 35.333 206.373 32.5348 206.373 28.9963C206.373 25.4578 206.643 22.593 207.182 20.5646C207.728 18.5289 208.463 17.0854 209.403 16.2415C210.342 15.3976 211.405 14.9682 212.6 14.9682C213.794 14.9682 214.857 15.3902 215.796 16.2415C216.736 17.0928 217.471 18.5215 218.017 20.5646C218.564 22.593 218.84 25.406 218.84 28.9963C218.84 32.5866 218.564 35.333 218.017 37.3983Z"
                                 fill="white" />
                         </svg>
-
-                        <div class="title_container_1">
-                            <h2>
-                                Questões gratuitas OAB
-                            </h2>
+                        <div class="area_total_preco_header">
+                            <div class="preco_especial_header">
+                                <p>
+                                    de R$ <s>799,00</s> por
+                                </p>
+                            </div>
+                            <div class="preco_especial_total_header">
+                                <div class="real">
+                                    <h4>
+                                        R$
+                                    </h4>
+                                </div>
+                                <div class="preco">
+                                    <h2>
+                                        349,
+                                    </h2>
+                                </div>
+                                <div class="preco">
+                                    <h4>
+                                        00
+                                    </h4>
+                                </div>
+                                <div class="parcelar">
+                                    <p>
+                                        em 10x nos cartões
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sub_title_container_1">
-                            <p>
-                                Aproveite a resolução de questões disponível na nossa plataforma, de forma gratuita.
-                            </p>
-                        </div>
+                     
                         <a href="#">
                             <div class="btn_container_1">
                                 <h2>
-                                    Resolver questões
+                                    Adquirir curso
                                 </h2>
                             </div>
                         </a>
@@ -539,13 +568,13 @@
         <div class="container_exclusivo">
             <div class="container_exclusivo_int">
                 <div class="area_exclusivo">
-                    <div class="title_exclusivo">
+                    <div class="title_exclusivo" data-animation="left" data-delay-1>
                         <h2>
                             Cronograma
                             Exclusivo
                         </h2>
                     </div>
-                    <div class="sub_title_exclusivo">
+                    <div class="sub_title_exclusivo" data-animation="left" data-delay-2>
                         <p>
                             <b>Sem tempo a perder!</b><br><br>
 
@@ -560,7 +589,7 @@
                         </p>
                     </div>
 
-                    <div class="bonus">
+                    <div class="bonus" data-animation="left" data-delay-3>
                         <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.06 0.929973C6.17 0.919973 4.33 2.73997 5.17 4.99997H2C1.46957 4.99997 0.960859 5.21069 0.585786 5.58576C0.210714 5.96083 0 6.46954 0 6.99997V8.99997C0 9.26519 0.105357 9.51954 0.292893 9.70708C0.48043 9.89462 0.734784 9.99997 1 9.99997H10V6.99997H12V9.99997H21C21.2652 9.99997 21.5196 9.89462 21.7071 9.70708C21.8946 9.51954 22 9.26519 22 8.99997V6.99997C22 6.46954 21.7893 5.96083 21.4142 5.58576C21.0391 5.21069 20.5304 4.99997 20 4.99997H16.83C18 1.72997 13.6 -0.580027 11.57 2.23997L11 2.99997L10.43 2.21997C9.8 1.32997 8.93 0.939973 8.06 0.929973ZM8 2.99997C8.89 2.99997 9.34 4.07997 8.71 4.70997C8.08 5.33997 7 4.88997 7 3.99997C7 3.73476 7.10536 3.4804 7.29289 3.29287C7.48043 3.10533 7.73478 2.99997 8 2.99997ZM14 2.99997C14.89 2.99997 15.34 4.07997 14.71 4.70997C14.08 5.33997 13 4.88997 13 3.99997C13 3.73476 13.1054 3.4804 13.2929 3.29287C13.4804 3.10533 13.7348 2.99997 14 2.99997ZM1 11V19C1 19.5304 1.21071 20.0391 1.58579 20.4142C1.96086 20.7893 2.46957 21 3 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V11H12V19H10V11H1Z"
@@ -573,6 +602,11 @@
                         </div>
                     </div>
 
+                    <div class="area_bg_exclusivo_mobile">
+                        <div class="bg_exclusivo_mobile"></div>
+                    </div>
+                    
+
                 </div>
             </div>
         </div>
@@ -580,14 +614,14 @@
 
     <div class="container_base">
         <div class="container_base_int">
-            <div class="title_base">
+            <div class="title_base" data-animation="down">
                 <h2>
                     Qual é a base do OAB 90 Dias?
                 </h2>
             </div>
 
             <div class="area_base">
-                <div class="base">
+                <div class="base" data-animation="down" data-delay-1>
                     <div class="base_int">
                         <div class="title_base_area">
                             <h2>
@@ -602,7 +636,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="base">
+                <div class="base" data-animation="down" data-delay-2>
                     <div class="base_int">
                         <div class="title_base_area">
                             <h2>
@@ -618,7 +652,7 @@
                     </div>
                 </div>
 
-                <div class="base">
+                <div class="base" data-animation="down" data-delay-3>
                     <div class="base_int">
                         <div class="title_base_area">
                             <h2>
@@ -634,7 +668,7 @@
                     </div>
                 </div>
 
-                <div class="base">
+                <div class="base" data-animation="down" data-delay-4>
                     <div class="base_int">
                         <div class="title_base_area">
                             <h2>
@@ -658,13 +692,13 @@
             <div class="container_oferta_int">
                 <div class="area_oferta">
                     <div class="area_texts_oferta">
-                        <div class="title_oferta">
+                        <div class="title_oferta" data-animation="left" data-delay-1>
                             <h2>
                                 O que você vai levar
                             </h2>
                         </div>
                         <div class="area_info_oferta">
-                            <div class="info_oferta">
+                            <div class="info_oferta" data-animation="left" data-delay-2>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -677,7 +711,7 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="info_oferta">
+                            <div class="info_oferta" class="info_oferta" data-animation="left" data-delay-3>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -690,7 +724,7 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="info_oferta">
+                            <div class="info_oferta" class="info_oferta" data-animation="left" data-delay-4>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -703,7 +737,7 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="info_oferta">
+                            <div class="info_oferta" class="info_oferta" data-animation="left" data-delay-5>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -716,7 +750,7 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="info_oferta">
+                            <div class="info_oferta" class="info_oferta" data-animation="left" data-delay-6>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -729,7 +763,7 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="info_oferta">
+                            <div class="info_oferta" class="info_oferta" data-animation="left" data-delay-7>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -743,7 +777,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="preco_oferta">
+                        <div class="preco_oferta" data-animation="down">
                             <h2>
                                 R$ 799,00
                             </h2>
@@ -751,25 +785,25 @@
                     </div>
                     <div class="area_oferta_especial">
                         <div class="area_oferta_especial_int">
-                            <div class="area_title_oferta_especial">
+                            <div class="area_title_oferta_especial" data-animation="right" data-delay-1>
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.4993 35.0834C8.06422 35.0834 0.416016 27.4352 0.416016 18.0001C0.416016 8.56496 8.06422 0.916748 17.4993 0.916748C26.9345 0.916748 34.5827 8.56496 34.5827 18.0001C34.5827 27.4352 26.9345 35.0834 17.4993 35.0834ZM11.5202 21.4167V24.8334H15.791V28.2501H19.2077V24.8334H20.916C22.0487 24.8334 23.135 24.3835 23.936 23.5825C24.7369 22.7816 25.1868 21.6953 25.1868 20.5626C25.1868 19.4299 24.7369 18.3436 23.936 17.5426C23.135 16.7417 22.0487 16.2917 20.916 16.2917H14.0827C13.8561 16.2917 13.6389 16.2018 13.4787 16.0416C13.3185 15.8814 13.2285 15.6641 13.2285 15.4376C13.2285 15.211 13.3185 14.9938 13.4787 14.8336C13.6389 14.6734 13.8561 14.5834 14.0827 14.5834H23.4785V11.1667H19.2077V7.75008H15.791V11.1667H14.0827C12.95 11.1667 11.8637 11.6167 11.0627 12.4176C10.2618 13.2186 9.81185 14.3049 9.81185 15.4376C9.81185 16.5703 10.2618 17.6566 11.0627 18.4575C11.8637 19.2585 12.95 19.7084 14.0827 19.7084H20.916C21.1426 19.7084 21.3598 19.7984 21.52 19.9586C21.6802 20.1188 21.7702 20.336 21.7702 20.5626C21.7702 20.7891 21.6802 21.0064 21.52 21.1666C21.3598 21.3268 21.1426 21.4167 20.916 21.4167H11.5202Z"
                                         fill="#FED32D" />
                                 </svg>
-                                <div class="title_oferta_especial">
+                                <div class="title_oferta_especial" data-animation="right" data-delay-2>
                                     <h2>
                                         Oferta Especial
                                     </h2>
                                 </div>
                             </div>
-                            <div class="preco_especial">
+                            <div class="preco_especial" data-animation="right" data-delay-3>
                                 <p>
                                     de R$ <s>799,00</s> por
                                 </p>
                             </div>
-                            <div class="preco_especial_total">
+                            <div class="preco_especial_total" data-animation="right" data-delay-4>
                                 <div class="real">
                                     <h4>
                                         R$
@@ -791,7 +825,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="area_pagamento_footer">
+                            <div class="area_pagamento_footer" data-animation="right" data-delay-5>
                                 <img src="img/visa.svg" alt="visa">
                                 <img src="img/mastercard.svg" alt="mastercard">
                                 <img src="img/logo_elo.svg" alt="elo">
@@ -801,7 +835,7 @@
                                 <img src="img/dinners_club.svg" alt="dinners club">
                                 <img src="img/bar_code.svg" alt="bar">
                             </div>
-                            <a href="#">
+                            <a href="#" data-animation="right" data-delay-6>
                                 <div class="btn_preco_especial">
                                     <h2>
                                         Quero a minha aprovação!
@@ -809,7 +843,7 @@
                                 </div>
                             </a>
 
-                            <div class="info_limitado">
+                            <div class="info_limitado" data-animation="right" data-delay-7>
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -925,14 +959,14 @@
         <div class="container_exame_oab">
             <div class="container_exame_oab_int">
                 <div class="area_exame_oab">
-                    <div class="title_exame_oab">
+                    <div class="title_exame_oab" data-animation="down">
                         <h2>
                             Sobre o 38º Exame da OAB
                         </h2>
                     </div>
                     <div class="area_edital_exame_oab">
 
-                        <div class="edital_exame_oab">
+                        <div class="edital_exame_oab" data-animation="down" data-delay-1>
                             <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -959,7 +993,7 @@
 
                         </div>
 
-                        <div class="edital_exame_oab">
+                        <div class="edital_exame_oab" data-animation="down" data-delay-2>
                             <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -988,7 +1022,7 @@
                         </div>
 
 
-                        <div class="edital_exame_oab">
+                        <div class="edital_exame_oab" data-animation="down" data-delay-3>
                             <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1015,19 +1049,19 @@
                         </div>
                     </div>
 
-                    <div class="info_exame_oab">
+                    <div class="info_exame_oab" data-animation="down" data-delay-1>
                         <p>
                             *Valor referente ao Exame 37
                         </p>
                     </div>
 
                     <div class="area_texts_disciplinas">
-                        <div class="title_disciplinas">
+                        <div class="title_disciplinas" data-animation="down" data-delay-1>
                             <h2>
                                 Disciplinas cobradas neste Exame
                             </h2>
                         </div>
-                        <div class="sub_title_disciplinas">
+                        <div class="sub_title_disciplinas" data-animation="down" data-delay-2>
                             <p>
                                 Direito Administrativo, Direito Civil, Direito do Consumidor, Direito Penal, Direito
                                 Tributário, Estatuto da Criança e do Adolescente, Filosofia do Direito, Processo do
@@ -1036,7 +1070,7 @@
                                 Penal
                             </p>
                         </div>
-                        <div class="area_novidades">
+                        <div class="area_novidades" data-animation="down" data-delay-3>
                             <div class="title_novidades">
                                 <h2>
                                     E as novíssimas
