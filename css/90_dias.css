@@ -257,16 +257,13 @@ nav ul li {
     list-style: none;
     width: 100%;
     max-width: max-content;
-}
-
-nav ul li a {
     font-weight: var(--font-weight-800);
     font-size: 18px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-nav ul li {
+nav ul li a {
     font-weight: var(--font-weight-800);
     font-size: 18px;
     text-transform: uppercase;
@@ -2110,6 +2107,24 @@ footer {
         gap: 8px;
     }
 
+    .btn_header_1_mobile,
+    .btn_header_2_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: #0223D0;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        padding: 12px 15px 12px 15px;
+        transition: all ease 300ms;
+    }
+    
+    .btn_header_1_mobile:hover,
+    .btn_header_2_mobile:hover {
+        background: #2684FC;
+        box-shadow: 0px 10px 25px -6px #2684FC;
+    }
     .btn_header_3_mobile {
         display: flex;
         align-items: center;
