@@ -428,12 +428,22 @@ nav ul li {
     border-radius: 30px;
     width: 100%;
     height: 185px;
-    transition: all ease 200ms;
+    transition: all ease 300ms;
     transform: scale3d(1, 1, 1);
 }
 
 .info_oab:hover {
     transform: scale3d(1.05, 1.05, 1.05);
+    background-color: #0B30E3;
+    box-shadow: 0px 8px 32px -10px #0B30E3;
+}
+
+.info_oab:hover>.info_oab_int .title_info_oab h2 {
+    color: #FFFFFF;
+}
+
+.info_oab:hover>.info_oab_int svg path {
+    fill: #FFFFFF;
 }
 
 .info_oab_int {
@@ -971,6 +981,11 @@ nav ul li {
     padding: 10px 15px 10px 15px;
     background: #000000;
     border-radius: 10px;
+    transition: all ease 300ms;
+}
+
+.btn_grupo_card:hover {
+    box-shadow: 0px 10px 25px -6px #000000;
 }
 
 .btn_grupo_card_int h2 {
@@ -1084,6 +1099,12 @@ nav ul li {
     padding: 10px 15px 10px 15px;
     background: #FED32D;
     border-radius: 10px;
+    transition: all ease 300ms;
+}
+
+.btn_grupo_participar_card:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
 }
 
 .btn_grupo_participar_card_int {
@@ -2029,6 +2050,7 @@ footer {
     background: #FED32D;
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
 }
 
 .btn_header_footer_1 h2 {
@@ -2036,6 +2058,11 @@ footer {
     font-size: 18px;
     color: #000000;
     margin: 0px;
+}
+
+.btn_header_footer_1:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
 }
 
 .btn_header_footer_2 {
@@ -2046,6 +2073,7 @@ footer {
     background: #0B30E3;
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
 }
 
 .btn_header_footer_2 h2 {
@@ -2053,6 +2081,11 @@ footer {
     font-size: 18px;
     color: #FFFFFF;
     margin: 0px;
+}
+
+.btn_header_footer_2:hover {
+    background: #2684FC;
+    box-shadow: 0px 10px 25px -6px #2684FC;
 }
 
 .area_social_footer {
@@ -2092,6 +2125,32 @@ footer {
     margin: 0px;
 }
 
+.instagram {
+    transition: all ease 300ms;
+}
+
+.instagram:hover {
+    background: linear-gradient(225deg, #4F5BD5 0%, #962FBF 20%, #D92B7C 40%, #FA7E1E 62.5%, #FEDA75 100%);
+    box-shadow: 0px 10px 25px -6px #FED32D;
+}
+
+.youtube {
+    transition: all ease 300ms;
+}
+
+.youtube:hover {
+    background: #FF0000;
+    box-shadow: 0px 10px 25px -6px #FF0000;
+}
+
+.www {
+    transition: all ease 300ms;
+}
+
+.www:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
+}
 
 .area_footer_2 {
     display: flex;
@@ -2135,6 +2194,11 @@ footer {
     background: #12EF9C;
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
+}
+
+.btn_whats_footer:hover {
+    box-shadow: 0px 10px 25px -6px #12EF9C;
 }
 
 .btn_whats_footer h2 {
@@ -2876,7 +2940,7 @@ footer {
     .info_oab_int {
         gap: 10px;
     }
-  
+
 
     #container_1 {
         background-image: url(../img/bg_header_mobile.png);
