@@ -175,7 +175,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 0px;
+    position: fixed;
+    left: 0px;
+    z-index: 99;
+    top: 54px;
+    transition: all ease 300ms;
 }
 
 .container_header_int {
@@ -2164,12 +2169,12 @@ footer {
 
     @keyframes move {
         0% {
-            top: -100%;
+            top: -500%;
 
         }
 
         100% {
-            top: 140px;
+            top: 100px;
         }
 
     }

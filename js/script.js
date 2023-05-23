@@ -22,7 +22,7 @@ function menu() {
     $(".menu_mobile_open").click(
         function () {
 
-            $('.menu_mobile').css('display', 'flex').css('top', '140px').css('animation', 'move ease-in 400ms');
+            $('.menu_mobile').css('display', 'flex').css('top', '100px').css('animation', 'move ease-in 400ms');
             setTimeout(() => {
                 $('.menu_mobile_open').css('display', 'none');
                 $('.menu_mobile_close').css('display', 'flex');
@@ -32,9 +32,9 @@ function menu() {
 
     $(".menu_mobile_close").click(
         function () {
-            $('.menu_mobile').css('top', '-100%').css('animation', 'move ease-out 400ms;');
+            $('.menu_mobile').css('top', '-500%').css('animation', 'move ease-out 400ms;');
             setTimeout(() => {
-                if ($('.menu_mobile').css('top', '-100%')) {
+                if ($('.menu_mobile').css('top', '-500%')) {
                     $('.menu_mobile').css('display', 'none');
                 }
             }, 600);
@@ -78,3 +78,21 @@ function faq() {
 
 }
 faq();
+
+function header() {
+    
+    let body = document.querySelector('body').getBoundingClientRect().top;
+
+    if( body < -500 ) {
+        $('.container_header').css( 'background-color', '#1F1F1F').css( 'top', '0px' );
+        $('.  container_header .aluno').css( 'top', '0px' );
+    }else {
+        $('.container_header').css( 'background-color', 'transparent' ).css( 'top', '54px' );
+    }
+
+//-508.4375
+
+
+}
+
+window.addEventListener( 'scroll', header );
