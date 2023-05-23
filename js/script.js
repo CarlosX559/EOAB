@@ -83,7 +83,7 @@ function header() {
     
     let body = document.querySelector('body').getBoundingClientRect();
 
-    if( body.top < -500 ) {
+    if( body.top < -30 ) {
         $('.container_header').css( 'background-color', '#1F1F1F').css( 'top', '0px' );
         $('.container_header_aluno').css( 'top', '0px' );
     }else {
