@@ -81,17 +81,18 @@ faq();
 
 function header() {
     
-    let body = document.querySelector('body').getBoundingClientRect().top;
+    let body = document.querySelector('body').getBoundingClientRect();
 
-    if( body < -500 ) {
+    if( body.top < -500 ) {
         $('.container_header').css( 'background-color', '#1F1F1F').css( 'top', '0px' );
-        $('.  container_header .aluno').css( 'top', '0px' );
+        $('.container_header_aluno').css( 'top', '0px' );
     }else {
         $('.container_header').css( 'background-color', 'transparent' ).css( 'top', '54px' );
     }
 
-//-508.4375
-
+    if(body.width <= 480) {
+        $('.container_header').css( 'top', '0px' );
+    }
 
 }
 
