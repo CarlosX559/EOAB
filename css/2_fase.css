@@ -175,7 +175,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 30px 0px;
+    padding: 20px 0px;
     position: fixed;
     left: 0px;
     z-index: 99;
@@ -210,15 +210,11 @@ body {
     display: none;
 }
 
-nav {
-    width: 100%;
-}
-
 nav ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 50px;
+    gap: 40px;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -252,6 +248,10 @@ nav ul li:hover>.border_header {
     height: 3px;
 }
 
+nav {
+    width: 100%;
+}
+
 nav ul li {
     display: flex;
     flex-direction: column;
@@ -262,15 +262,18 @@ nav ul li {
     list-style: none;
     width: 100%;
     max-width: max-content;
-    font-weight: var(--font-weight-800);
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 nav ul li a {
     font-weight: var(--font-weight-800);
-    font-size: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+nav ul li {
+    font-weight: var(--font-weight-800);
+    font-size: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -326,11 +329,9 @@ nav ul li a {
 
 .btn_header_3 li {
     font-weight: var(--font-weight-700);
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
     color: #000000;
 }
-
 
 .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
