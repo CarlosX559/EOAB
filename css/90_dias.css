@@ -1944,6 +1944,7 @@ footer {
     background: #FED32D;
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
 }
 
 .btn_header_footer_1 h2 {
@@ -1951,6 +1952,11 @@ footer {
     font-size: 18px;
     color: #000000;
     margin: 0px;
+}
+
+.btn_header_footer_1:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
 }
 
 .btn_header_footer_2 {
@@ -1961,6 +1967,7 @@ footer {
     background: #0B30E3;
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
 }
 
 .btn_header_footer_2 h2 {
@@ -1968,6 +1975,11 @@ footer {
     font-size: 18px;
     color: #FFFFFF;
     margin: 0px;
+}
+
+.btn_header_footer_2:hover {
+    background: #2684FC;
+    box-shadow: 0px 10px 25px -6px #2684FC;
 }
 
 .area_social_footer {
@@ -1988,6 +2000,34 @@ footer {
     display: flex;
     gap: 10px;
 }
+
+.instagram {
+    transition: all ease 300ms;
+}
+
+.instagram:hover {
+    background: linear-gradient(225deg, #4F5BD5 0%, #962FBF 20%, #D92B7C 40%, #FA7E1E 62.5%, #FEDA75 100%);
+    box-shadow: 0px 10px 25px -6px #FED32D;
+}
+
+.youtube {
+    transition: all ease 300ms;
+}
+
+.youtube:hover {
+    background: #FF0000;
+    box-shadow: 0px 10px 25px -6px #FF0000;
+}
+
+.www {
+    transition: all ease 300ms;
+}
+
+.www:hover {
+    background: #FED32D;
+    box-shadow: 0px 10px 25px -6px #FED32D;
+}
+
 
 .icons_footer {
     display: flex;
@@ -2050,6 +2090,11 @@ footer {
     background: #12EF9C;
     border-radius: 10px;
     padding: 12px 15px 12px 15px;
+    transition: all ease 300ms;
+}
+
+.btn_whats_footer:hover {
+    box-shadow: 0px 10px 25px -6px #12EF9C;
 }
 
 .btn_whats_footer h2 {
