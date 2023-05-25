@@ -173,7 +173,7 @@
                                                         <img src="img/world.svg" alt="">
                                                         <li>Blog</li>
                                                     </div>
-    
+
                                                     <div class="border_header"></div>
                                                 </div>
                                             </a>
@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                     
+
                         <a href="#">
                             <div class="btn_container_1">
                                 <h2>
@@ -605,9 +605,42 @@
                     <div class="area_bg_exclusivo_mobile">
                         <div class="bg_exclusivo_mobile"></div>
                     </div>
-                    
+
 
                 </div>
+
+                <div class="area_slide_exclusivo">
+                    <div class="slide-3 owl-carousel owl-theme">
+
+                        <div class="item">
+                            <img src="img_90_dias/exclusivo_1.png" alt="">
+                        </div>
+    
+                        <div class="item">
+                            <img src="img_90_dias/exclusivo_2.png" alt="">
+                        </div>
+    
+                        <div class="item">
+                            <img src="img_90_dias/exclusivo_3.png" alt="">
+                        </div>
+    
+                        <div class="item">
+                            <img src="img_90_dias/exclusivo_4.png" alt="">
+                        </div>
+    
+                        <div class="item">
+                            <img src="img_90_dias/exclusivo_5.png" alt="">
+                        </div>
+    
+                        <div class="item">
+                            <img src="img_90_dias/exclusivo_6.png" alt="">
+                        </div>
+    
+                    </div>
+                </div>
+               
+
+
             </div>
         </div>
     </section>
@@ -946,7 +979,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -1915,6 +1948,37 @@
                 }
 
             });
+
+            $(".slide-3").owlCarousel({
+
+                items: 6,
+                loop: true,
+                nav: false,
+                navText: [
+                    prev,
+                    next
+                ],
+                dots: true,
+                autoplay: false,
+                autoplayTimeout: 8000,
+                responsive: {
+                    375: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1,
+                        margin:20,
+                    },
+                    1024: {
+                        items: 1
+                    },
+                    1440: {
+                        items: 1
+                    }
+                }
+
+            });
+
 
         });
 
