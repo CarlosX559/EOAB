@@ -604,7 +604,7 @@ button:focus {
     width: 100%;
     max-width: 1380px;
     padding: 40px 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .area_exclusivo {
