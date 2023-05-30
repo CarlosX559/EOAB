@@ -1226,11 +1226,9 @@ button:focus {
     flex-direction: column;
     align-items: self-start;
     width: 100%;
+    max-width: 1840px;
     gap: 35px;
-}
-
-.title_comentarios_total {
-    padding-left: 20px;
+    padding-left: 60px;
 }
 
 .title_comentarios_total h2 {
@@ -1243,7 +1241,7 @@ button:focus {
 
 .slide-1 .item {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 .slide-1 .owl-dots {
@@ -1270,15 +1268,13 @@ button:focus {
 
 .comentarios_card {
     display: flex;
-    flex: 0 0 340px;
-    margin-right: 35px;
-    margin-left: 35px;
-
+    flex: 0 0 410px;
 }
 
 .icon_comentario {
     position: absolute;
-    bottom: -38px;
+    bottom: -45px;
+    left: 1px;
 }
 
 .comentarios_card_int {
@@ -2178,7 +2174,31 @@ footer {
     margin: 0px;
 }
 
+@media(max-width: 1600px) {
+    .comentarios_card {
+        display: flex;
+        flex: 0 0 320px;
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+
+    .container_comentarios_int {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        width: 100%;
+        gap: 35px;
+        max-width: 1480px;
+        padding-left: 60px;
+    }
+
+}
+
 @media(max-width: 1024px) {
+    .container_comentarios_int {
+        padding-left: 40px;
+    }
 
     .title_header_1 h2 {
         font-size: 1em;
@@ -2650,14 +2670,13 @@ footer {
     .title_comentarios_total h2 {
         font-size: 40px;
     }
-
     .comentarios_card {
         display: flex;
-        flex: 0 0 325px;
-        margin-right: 35px;
-        margin-left: 35px;
-    }
+        flex: 0 0 320px;
+        margin-right: 0px;
+        margin-left: 0px;
 
+    }
     .area_comentarios_total {
         padding: 60px 0px 80px 0px;
     }
@@ -3064,12 +3083,13 @@ footer {
         width: 100%;
         height: 100%;
     }
-    
+
     .slide-3 .owl-nav {
         bottom: -48px;
         width: 55%;
         left: auto;
     }
+
     .slide-3 .owl-nav img {
         width: 10px;
     }
@@ -3197,6 +3217,7 @@ footer {
     .container_comentarios_int {
         align-items: center;
         gap: 20px;
+        padding-left: 0px;
     }
 
     .title_comentarios_total h2 {

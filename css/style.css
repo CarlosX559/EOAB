@@ -1142,9 +1142,11 @@ nav ul li {
 .container_cursos_int {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: self-start;
     width: 100%;
+    max-width: 1920px;
     gap: 35px;
+    padding-left: 60px;
 }
 
 .title_cursos_total h2 {
@@ -1158,7 +1160,7 @@ nav ul li {
 
 .slide-4 .item {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 .slide-4 .owl-dots {
@@ -1210,9 +1212,9 @@ button:focus {
 
 .card_cursos {
     display: flex;
-    flex: 0 0 340px;
-    margin-right: 35px;
-    margin-left: 35px;
+    flex: 0 0 320px;
+    margin-right: 20px;
+    margin-left: 0px;
     background: #FFFFFF;
 }
 
@@ -1338,7 +1340,9 @@ button:focus {
     flex-direction: column;
     align-items: self-start;
     width: 100%;
+    max-width: 1920px;
     gap: 35px;
+    padding-left: 60px;
 }
 
 .title_comentarios_total h2 {
@@ -1351,7 +1355,7 @@ button:focus {
 
 .slide-5 .item {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 .slide-5 .owl-dots {
@@ -1378,15 +1382,13 @@ button:focus {
 
 .comentarios_card {
     display: flex;
-    flex: 0 0 340px;
-    margin-right: 35px;
-    margin-left: 35px;
-
+    flex: 0 0 410px;
 }
 
 .icon_comentario {
     position: absolute;
-    bottom: -38px;
+    bottom: -45px;
+    left: 1px;
 }
 
 .comentarios_card_int {
@@ -2284,7 +2286,44 @@ footer {
     margin: 0px;
 }
 
+
+@media(max-width: 1600px) {
+    .comentarios_card {
+        display: flex;
+        flex: 0 0 320px;
+        margin-right: 20px;
+        margin-left: 0px;
+
+    }
+
+    .container_comentarios_int {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        width: 100%;
+        gap: 35px;
+        padding-left: 60px;
+    }
+
+    .container_cursos_int {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        width: 100%;
+        gap: 35px;
+        padding-left: 60px;
+    }
+}
+
 @media(max-width: 1024px) {
+
+    .container_comentarios_int {
+        padding-left: 0px;
+    }
+
+    .container_cursos_int {
+        padding-left: 0px;
+    }
 
     .title_header_1 h2 {
         font-size: 1em;
@@ -2924,8 +2963,8 @@ footer {
     .area_header {
         display: none;
     }
-    
-    .container_header  {
+
+    .container_header {
         top: 0px;
     }
 

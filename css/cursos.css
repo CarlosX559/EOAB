@@ -526,7 +526,9 @@ nav ul li {
     flex-direction: column;
     align-items: self-start;
     width: 100%;
+    max-width: 1650px;
     gap: 35px;
+    padding-left: 60px;
 }
 
 .title_comentarios_total h2 {
@@ -577,7 +579,7 @@ button:focus {
 
 .slide-5 .item {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 .slide-5 .owl-dots {
@@ -604,15 +606,13 @@ button:focus {
 
 .comentarios_card {
     display: flex;
-    flex: 0 0 340px;
-    margin-right: 35px;
-    margin-left: 35px;
-
+    flex: 0 0 410px;
 }
 
 .icon_comentario {
     position: absolute;
-    bottom: -38px;
+    bottom: -45px;
+    left: 1px;
 }
 
 .comentarios_card_int {
@@ -1468,7 +1468,32 @@ footer {
     margin: 0px;
 }
 
+@media(max-width: 1600px) {
+    .comentarios_card {
+        display: flex;
+        flex: 0 0 320px;
+        margin-right: 20px;
+        margin-left: 0px;
+
+    }
+
+    .container_comentarios_int {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        width: 100%;
+        gap: 35px;
+        padding-left: 60px;
+        max-width: 1480px;
+    }
+
+}
+
 @media(max-width: 1024px) {
+    .container_comentarios_int {
+        padding-left: 0px;
+    }
+
     nav ul li a {
         color: #FFFFFF;
     }
